@@ -1,7 +1,5 @@
 sources:
-  - Rubik.glyphs
-  - Rubik-Italic.glyphs
+  - Kreadon.glyphs
 axisOrder:
   - wght
-  - ital
-familyName: Rubik
+familyName: Kreadon

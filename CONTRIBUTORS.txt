@@ -8,3 +8,5 @@
 #
 # Names should be added to this file as:
 # Name <email address>
+
+Reiya WATANABE <am.layer1082@gmail.com>
