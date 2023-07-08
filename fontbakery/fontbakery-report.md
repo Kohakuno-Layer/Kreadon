@@ -2,42 +2,7 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[28] Kreadon-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
-
-
-	- 0x014B (LATIN SMALL LETTER ENG)
- 
-
-	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* 🔥 **FAIL** Licensing inconsistency in name table entries! NameID=13 (LICENSE DESCRIPTION) indicates Open Font licensing, but NameID=14 (LICENSE URL) has 'https://scripts.sil.org/ofl'. Expected: 'https://scripts.sil.org/OFL' [code: licensing-inconsistency]
-* 🔥 **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache: 'https://www.apache.org/licenses/LICENSE-2.0' or Open Font License: 'https://scripts.sil.org/OFL'
-For a small set of legacy families the Ubuntu Font License 'https://www.ubuntu.com/legal/terms-and-policies/font-licence' may be acceptable as well.
-When in doubt, please choose OFL for new font projects. [code: no-license-found]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+<details><summary><b>[26] Kreadon-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font names are incorrect:
@@ -100,6 +65,14 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
  [code: http]
@@ -525,6 +498,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* Beta (U+0392): L<<65.0,1.0>--<64.0,733.0>>
 
+	* Eng (U+014A): L<<71.0,0.0>--<70.0,733.0>>
+
 	* Eta (U+0397): L<<525.0,441.0>--<524.0,733.0>>
 
 	* Etatonos (U+0389): L<<715.0,441.0>--<714.0,733.0>>
@@ -596,42 +571,7 @@ The following glyphs do not have the recommended number of contours:
 	* uni043C (U+043C): L<<501.0,0.0>--<500.0,177.0>> 
 
 	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] Kreadon-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
-
-
-	- 0x014B (LATIN SMALL LETTER ENG)
- 
-
-	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* 🔥 **FAIL** Licensing inconsistency in name table entries! NameID=13 (LICENSE DESCRIPTION) indicates Open Font licensing, but NameID=14 (LICENSE URL) has 'https://scripts.sil.org/ofl'. Expected: 'https://scripts.sil.org/OFL' [code: licensing-inconsistency]
-* 🔥 **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache: 'https://www.apache.org/licenses/LICENSE-2.0' or Open Font License: 'https://scripts.sil.org/OFL'
-For a small set of legacy families the Ubuntu Font License 'https://www.ubuntu.com/legal/terms-and-policies/font-licence' may be acceptable as well.
-When in doubt, please choose OFL for new font projects. [code: no-license-found]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] Kreadon-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font names are incorrect:
@@ -683,6 +623,14 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
  [code: http]
@@ -1008,6 +956,12 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0123 (U+0123) contains a short segment L<<445.0,458.0>--<445.0,470.0>>
 
+	* Eng (U+014A) contains a short segment B<<372.0,-229.0>-<357.0,-227.0>-<349.0,-224.0>>
+
+	* eng (U+014B) contains a short segment B<<288.0,-163.0>-<299.0,-166.0>-<305.0,-166.5>>
+
+	* eng (U+014B) contains a short segment B<<305.0,-166.5>-<311.0,-167.0>-<316.0,-167.0>>
+
 	* oe (U+0153) contains a short segment B<<945.0,238.0>-<945.0,231.0>-<945.0,223.5>>
 
 	* oe (U+0153) contains a short segment B<<945.0,223.5>-<945.0,216.0>-<944.0,210.0>>
@@ -1079,6 +1033,8 @@ The following glyphs do not have the recommended number of contours:
 	* B (U+0042): L<<65.0,0.0>--<64.0,733.0>>
 
 	* Beta (U+0392): L<<65.0,0.0>--<64.0,733.0>>
+
+	* Eng (U+014A): L<<71.0,0.0>--<70.0,733.0>>
 
 	* Eta (U+0397): L<<529.0,416.0>--<528.0,733.0>>
 
@@ -1153,45 +1109,10 @@ The following glyphs do not have the recommended number of contours:
 	* uni043C (U+043C): L<<471.0,0.0>--<470.0,289.0>> 
 
 	* uni043C (U+043C): L<<54.0,0.0>--<53.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[26] Kreadon-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
-
-
-	- 0x014B (LATIN SMALL LETTER ENG)
- 
-
-	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] Kreadon-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
 * 🔥 **FAIL** Best SubFamily name is 'Extra Light'. Expected OS/2 usWeightClass is 300, got 200. [code: bad-value]
-</div></details><details><summary>🔥 <b>FAIL:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* 🔥 **FAIL** Licensing inconsistency in name table entries! NameID=13 (LICENSE DESCRIPTION) indicates Open Font licensing, but NameID=14 (LICENSE URL) has 'https://scripts.sil.org/ofl'. Expected: 'https://scripts.sil.org/OFL' [code: licensing-inconsistency]
-* 🔥 **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache: 'https://www.apache.org/licenses/LICENSE-2.0' or Open Font License: 'https://scripts.sil.org/OFL'
-For a small set of legacy families the Ubuntu Font License 'https://www.ubuntu.com/legal/terms-and-policies/font-licence' may be acceptable as well.
-When in doubt, please choose OFL for new font projects. [code: no-license-found]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
@@ -1246,6 +1167,14 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
  [code: http]
@@ -1515,6 +1444,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* Dcaron (U+010E): L<<101.0,696.0>--<102.0,41.0>>
 
+	* Eng (U+014A): L<<71.0,0.0>--<70.0,733.0>>
+
 	* Eta (U+0397): L<<544.0,400.0>--<543.0,733.0>>
 
 	* Etatonos (U+0389): L<<624.0,400.0>--<623.0,733.0>>
@@ -1584,45 +1515,10 @@ The following glyphs do not have the recommended number of contours:
 	* uni043C (U+043C): L<<480.0,0.0>--<479.0,350.0>> 
 
 	* uni043C (U+043C): L<<56.0,0.0>--<55.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[26] Kreadon-Demi.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
-
-
-	- 0x014B (LATIN SMALL LETTER ENG)
- 
-
-	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[24] Kreadon-Demi.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
 * 🔥 **FAIL** Best SubFamily name is 'Demi'. Expected OS/2 usWeightClass is 400, got 600. [code: bad-value]
-</div></details><details><summary>🔥 <b>FAIL:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* 🔥 **FAIL** Licensing inconsistency in name table entries! NameID=13 (LICENSE DESCRIPTION) indicates Open Font licensing, but NameID=14 (LICENSE URL) has 'https://scripts.sil.org/ofl'. Expected: 'https://scripts.sil.org/OFL' [code: licensing-inconsistency]
-* 🔥 **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache: 'https://www.apache.org/licenses/LICENSE-2.0' or Open Font License: 'https://scripts.sil.org/OFL'
-For a small set of legacy families the Ubuntu Font License 'https://www.ubuntu.com/legal/terms-and-policies/font-licence' may be acceptable as well.
-When in doubt, please choose OFL for new font projects. [code: no-license-found]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
@@ -1678,6 +1574,14 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
  [code: http]
@@ -2025,6 +1929,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0123 (U+0123) contains a short segment L<<423.0,460.0>--<423.0,470.0>>
 
+	* eng (U+014B) contains a short segment B<<312.0,-131.5>-<320.0,-133.0>-<329.0,-133.0>>
+
 	* oe (U+0153) contains a short segment B<<926.0,233.0>-<926.0,224.0>-<926.0,215.5>>
 
 	* oe (U+0153) contains a short segment B<<926.0,215.5>-<926.0,207.0>-<925.0,198.0>>
@@ -2127,6 +2033,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* Beta (U+0392): L<<65.0,0.0>--<64.0,733.0>>
 
+	* Eng (U+014A): L<<71.0,0.0>--<70.0,733.0>>
+
 	* Eta (U+0397): L<<525.0,431.0>--<524.0,733.0>>
 
 	* Etatonos (U+0389): L<<685.0,431.0>--<684.0,733.0>>
@@ -2154,6 +2062,8 @@ The following glyphs do not have the recommended number of contours:
 	* Phi (U+03A6): L<<368.0,99.0>--<367.0,636.0>>
 
 	* Psi (U+03A8): L<<341.0,234.0>--<340.0,733.0>>
+
+	* eng (U+014B): L<<157.0,363.0>--<156.0,0.0>>
 
 	* ij (U+0133): L<<366.0,-40.0>--<365.0,378.0>>
 
@@ -2196,42 +2106,7 @@ The following glyphs do not have the recommended number of contours:
 	* uni043C (U+043C): L<<485.0,0.0>--<484.0,223.0>> 
 
 	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] Kreadon-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
-
-
-	- 0x014B (LATIN SMALL LETTER ENG)
- 
-
-	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* 🔥 **FAIL** Licensing inconsistency in name table entries! NameID=13 (LICENSE DESCRIPTION) indicates Open Font licensing, but NameID=14 (LICENSE URL) has 'https://scripts.sil.org/ofl'. Expected: 'https://scripts.sil.org/OFL' [code: licensing-inconsistency]
-* 🔥 **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache: 'https://www.apache.org/licenses/LICENSE-2.0' or Open Font License: 'https://scripts.sil.org/OFL'
-For a small set of legacy families the Ubuntu Font License 'https://www.ubuntu.com/legal/terms-and-policies/font-licence' may be acceptable as well.
-When in doubt, please choose OFL for new font projects. [code: no-license-found]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] Kreadon-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font names are incorrect:
@@ -2285,6 +2160,14 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
  [code: http]
@@ -2630,6 +2513,12 @@ The following glyphs do not have the recommended number of contours:
 
 	* Ncaron (U+0147) contains a short segment L<<149.0,617.0>--<149.0,592.0>>
 
+	* Eng (U+014A) contains a short segment L<<533.0,115.0>--<532.0,141.0>>
+
+	* Eng (U+014A) contains a short segment B<<369.0,-230.5>-<352.0,-228.0>-<344.0,-225.0>>
+
+	* eng (U+014B) contains a short segment B<<307.0,-157.0>-<314.0,-158.0>-<319.0,-158.0>>
+
 	* oe (U+0153) contains a short segment B<<936.0,233.0>-<936.0,226.0>-<936.0,219.0>>
 
 	* oe (U+0153) contains a short segment B<<936.0,219.0>-<936.0,212.0>-<935.0,205.0>>
@@ -2714,6 +2603,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* Beta (U+0392): L<<65.0,0.0>--<64.0,733.0>>
 
+	* Eng (U+014A): L<<71.0,0.0>--<70.0,733.0>>
+
 	* Eta (U+0397): L<<525.0,421.0>--<524.0,733.0>>
 
 	* Etatonos (U+0389): L<<655.0,421.0>--<654.0,733.0>>
@@ -2745,6 +2636,8 @@ The following glyphs do not have the recommended number of contours:
 	* asterisk (U+002A): L<<257.0,566.0>--<258.0,450.0>>
 
 	* asterisk (U+002A): L<<258.0,783.0>--<257.0,667.0>>
+
+	* eng (U+014B): L<<131.0,380.0>--<130.0,0.0>>
 
 	* ij (U+0133): L<<323.0,-60.0>--<322.0,398.0>>
 
@@ -2787,45 +2680,10 @@ The following glyphs do not have the recommended number of contours:
 	* uni043C (U+043C): L<<468.0,0.0>--<467.0,270.0>> 
 
 	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[27] Kreadon-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
-
-
-	- 0x014B (LATIN SMALL LETTER ENG)
- 
-
-	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[25] Kreadon-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
 * 🔥 **FAIL** Best SubFamily name is 'Extra Bold'. Expected OS/2 usWeightClass is 700, got 800. [code: bad-value]
-</div></details><details><summary>🔥 <b>FAIL:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* 🔥 **FAIL** Licensing inconsistency in name table entries! NameID=13 (LICENSE DESCRIPTION) indicates Open Font licensing, but NameID=14 (LICENSE URL) has 'https://scripts.sil.org/ofl'. Expected: 'https://scripts.sil.org/OFL' [code: licensing-inconsistency]
-* 🔥 **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache: 'https://www.apache.org/licenses/LICENSE-2.0' or Open Font License: 'https://scripts.sil.org/OFL'
-For a small set of legacy families the Ubuntu Font License 'https://www.ubuntu.com/legal/terms-and-policies/font-licence' may be acceptable as well.
-When in doubt, please choose OFL for new font projects. [code: no-license-found]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
@@ -2880,6 +2738,14 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
  [code: http]
@@ -3341,6 +3207,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* Beta (U+0392): L<<65.0,1.0>--<64.0,733.0>>
 
+	* Eng (U+014A): L<<71.0,0.0>--<70.0,733.0>>
+
 	* Eta (U+0397): L<<525.0,451.0>--<524.0,733.0>>
 
 	* Etatonos (U+0389): L<<745.0,451.0>--<744.0,733.0>>
@@ -3416,42 +3284,7 @@ The following glyphs do not have the recommended number of contours:
 	* uni043C (U+043C): L<<518.0,0.0>--<517.0,130.0>> 
 
 	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[25] Kreadon-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsType does not impose restrictions. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fstype">com.google.fonts/check/fstype</a>)</summary><div>
-
-
-* 🔥 **FAIL** In this font fsType is set to 8 meaning that:
-The font may be embedded but must only be installed temporarily on other systems.
-
-No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x014A (LATIN CAPITAL LETTER ENG)
-
-
-	- 0x016C (LATIN CAPITAL LETTER U WITH BREVE)
-
-
-	- 0x014B (LATIN SMALL LETTER ENG)
- 
-
-	- 0x016D (LATIN SMALL LETTER U WITH BREVE)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* 🔥 **FAIL** Licensing inconsistency in name table entries! NameID=13 (LICENSE DESCRIPTION) indicates Open Font licensing, but NameID=14 (LICENSE URL) has 'https://scripts.sil.org/ofl'. Expected: 'https://scripts.sil.org/OFL' [code: licensing-inconsistency]
-* 🔥 **FAIL** A known license URL must be provided in the NameID 14 (LICENSE INFO URL) entry. Currently accepted licenses are Apache: 'https://www.apache.org/licenses/LICENSE-2.0' or Open Font License: 'https://scripts.sil.org/OFL'
-For a small set of legacy families the Ubuntu Font License 'https://www.ubuntu.com/legal/terms-and-policies/font-licence' may be acceptable as well.
-When in doubt, please choose OFL for new font projects. [code: no-license-found]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
-* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
- [code: http]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[23] Kreadon-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font names are incorrect:
@@ -3505,6 +3338,14 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
+ [code: http]
+</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
+
+
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
+* ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** Please consider using HTTPS URLs at name table entry [plat=3, enc=1, name=13] [code: http-in-description]
 * ⚠ **WARN** For now we're still accepting http URLs, but you should consider using https instead.
  [code: http]
@@ -3828,6 +3669,16 @@ The following glyphs do not have the recommended number of contours:
 
 	* lslash (U+0142) contains a short segment B<<218.0,43.0>-<222.0,43.0>-<228.5,43.5>>
 
+	* Eng (U+014A) contains a short segment B<<405.0,-228.0>-<389.0,-228.0>-<375.5,-226.5>>
+
+	* Eng (U+014A) contains a short segment B<<375.5,-226.5>-<362.0,-225.0>-<354.0,-223.0>>
+
+	* Eng (U+014A) contains a short segment B<<368.0,-169.0>-<378.0,-171.0>-<399.0,-171.0>>
+
+	* eng (U+014B) contains a short segment B<<290.0,-175.0>-<298.0,-177.0>-<303.0,-177.5>>
+
+	* eng (U+014B) contains a short segment B<<303.0,-177.5>-<308.0,-178.0>-<313.0,-178.0>>
+
 	* oe (U+0153) contains a short segment B<<956.0,243.0>-<956.0,236.0>-<956.0,228.5>>
 
 	* oe (U+0153) contains a short segment B<<956.0,228.5>-<956.0,221.0>-<955.0,215.0>>
@@ -3926,6 +3777,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* Dcaron (U+010E): L<<123.0,675.0>--<124.0,62.0>>
 
+	* Eng (U+014A): L<<71.0,0.0>--<70.0,733.0>>
+
 	* Eta (U+0397): L<<535.0,411.0>--<534.0,733.0>>
 
 	* Etatonos (U+0389): L<<640.0,411.0>--<639.0,733.0>>
@@ -3957,6 +3810,8 @@ The following glyphs do not have the recommended number of contours:
 	* asterisk (U+002A): L<<242.0,777.0>--<241.0,656.0>>
 
 	* at (U+0040): L<<645.0,507.0>--<644.0,358.0>>
+
+	* eng (U+014B): L<<111.0,402.0>--<110.0,0.0>>
 
 	* ij (U+0133): L<<309.0,-60.0>--<308.0,418.0>>
 
@@ -4005,8 +3860,8 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 82 | 100 | 826 | 43 | 569 | 0 |
-| 0% | 5% | 6% | 51% | 3% | 35% | 0% |
+| 0 | 61 | 107 | 826 | 43 | 583 | 0 |
+| 0% | 4% | 7% | 51% | 3% | 36% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
