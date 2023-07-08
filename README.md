@@ -38,15 +38,9 @@ Additionally, Kreadon provides some advanced features for your typography:
 
 ## Building
 
-Fonts are built automatically by GitHub Actions - take a look in the "Actions" tab for the latest build.
+Fonts are built automatically by GitHub Actions. 
 
-If you want to build fonts manually on your own computer:
-
-* `make build` will produce font files.
-* `make test` will run [FontBakery](https://github.com/googlefonts/fontbakery)'s quality assurance tests.
-* `make proof` will generate HTML proof files.
-
-The proof files and QA tests are also available automatically via GitHub Actions - look at https://Kohakuno-Layer.github.io/Kreadon.
+You can download fonts from [Releases](https://github.com/Kohakuno-Layer/Kreadon/releases).
 
 ## Changelog
 
