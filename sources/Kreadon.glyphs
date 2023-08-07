@@ -767,7 +767,7 @@ value = (
 );
 }
 );
-date = "2023-08-07 15:00:21 +0000";
+date = "2023-08-07 14:00:21 +0000";
 familyName = Kreadon;
 featurePrefixes = (
 {
@@ -111847,6 +111847,12 @@ instances = (
 axesValues = (
 100
 );
+customParameters = (
+{
+name = typoLineGap;
+value = 0;
+}
+);
 instanceInterpolations = {
 m01 = 1;
 };
@@ -111866,6 +111872,12 @@ weightClass = 200;
 {
 axesValues = (
 250
+);
+customParameters = (
+{
+name = typoLineGap;
+value = 0;
+}
 );
 instanceInterpolations = {
 m002 = 0.5;
@@ -111888,6 +111900,12 @@ weightClass = 300;
 axesValues = (
 330
 );
+customParameters = (
+{
+name = typoLineGap;
+value = 0;
+}
+);
 instanceInterpolations = {
 m002 = 0.76667;
 m01 = 0.23333;
@@ -111908,6 +111926,12 @@ value = "Kreadon-R";
 axesValues = (
 400
 );
+customParameters = (
+{
+name = typoLineGap;
+value = 0;
+}
+);
 instanceInterpolations = {
 m002 = 1;
 };
@@ -111927,6 +111951,12 @@ weightClass = 500;
 {
 axesValues = (
 500
+);
+customParameters = (
+{
+name = typoLineGap;
+value = 0;
+}
 );
 instanceInterpolations = {
 m002 = 0.66667;
@@ -111949,6 +111979,12 @@ weightClass = 600;
 axesValues = (
 600
 );
+customParameters = (
+{
+name = typoLineGap;
+value = 0;
+}
+);
 instanceInterpolations = {
 m002 = 0.33333;
 m003 = 0.66667;
@@ -111969,6 +112005,12 @@ weightClass = 700;
 {
 axesValues = (
 700
+);
+customParameters = (
+{
+name = typoLineGap;
+value = 0;
+}
 );
 instanceInterpolations = {
 m003 = 1;
