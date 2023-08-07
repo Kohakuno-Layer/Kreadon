@@ -14,6 +14,8 @@
 
 ![Sample Image](documentation/32.png)
 
+Check [Releases](https://github.com/Kohakuno-Layer/Kreadon/releases) to download the font family.
+
 Introducing Kreadon, a font family of geometric sans-serif typefaces. Kreadon offers a simple and graphically appealing typographic style in seven weights, ranging from ExtraLight to ExtraBold, perfect for both headlines and main-body texting. Moreover, it possesses the capability of swappable alternative characters thanks to Opentype features, which contributes to its adaptability. 
 
 Kreadon was initially designed for the branding of StudioGnu, the creators’ community based on the Vocaloid culture, but it is available to the public to inspire and explore further creativity inside and outside the community.
@@ -32,15 +34,13 @@ Additionally, Kreadon provides some advanced features for your typography:
 
 ## Designer
 
-**Kohakuno**, typographer based on Tokyo, Japan.
+**Kohakuno**, an amateur typographer based on Tokyo, Japan.
 * [Twitter/Japanese](https://twitter.com/Amber_layer01)
 * [Behance/English](https://www.behance.net/kohakuno)
 
 ## Building
 
 Fonts are built automatically by GitHub Actions. 
-
-You can download fonts from [Releases](https://github.com/Kohakuno-Layer/Kreadon/releases).
 
 ## Changelog
 
