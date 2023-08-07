@@ -14,7 +14,9 @@
 
 ![Sample Image](documentation/32.png)
 
-Check [Releases](https://github.com/Kohakuno-Layer/Kreadon/releases) to download the font family.
+## Check [Releases](https://github.com/Kohakuno-Layer/Kreadon/releases) to download the font family.
+
+## What's Kreadon?
 
 Introducing Kreadon, a font family of geometric sans-serif typefaces. Kreadon offers a simple and graphically appealing typographic style in seven weights, ranging from ExtraLight to ExtraBold, perfect for both headlines and main-body texting. Moreover, it possesses the capability of swappable alternative characters thanks to Opentype features, which contributes to its adaptability. 
 
