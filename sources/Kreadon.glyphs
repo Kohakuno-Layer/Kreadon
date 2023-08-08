@@ -767,7 +767,7 @@ value = (
 );
 }
 );
-date = "2023-08-07 14:00:21 +0000";
+date = "2023-08-08 00:50:54 +0000";
 familyName = Kreadon;
 featurePrefixes = (
 {
@@ -1121,7 +1121,6 @@ sub amacron by amacron.ss01;
 sub aogonek by aogonek.ss01;
 sub aring by aring.ss01;
 sub atilde by atilde.ss01;
-sub ae by ae.ss01;
 sub a-cy by a-cy.ss01;
 ";
 labels = (
@@ -114000,5 +113999,5 @@ GSOffsetVertical = 0;
 hugojourdan.RainbowFontView.labelUsed = Glyph;
 };
 versionMajor = 1;
-versionMinor = 200;
+versionMinor = 201;
 }
