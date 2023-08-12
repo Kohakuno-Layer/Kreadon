@@ -12,13 +12,15 @@
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKohakuno-Layer%2FKreadon%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2FKohakuno-Layer%2FKreadon%2Fgh-pages%2Fbadges%2FUniversal.json
 
-![Sample Image](documentation/32.png)
+![Sample Image](documentation/37-01.png)
 
 ## Check [Releases](https://github.com/Kohakuno-Layer/Kreadon/releases) to download the font family.
 
 ## What's Kreadon?
 
 Introducing Kreadon, a font family of geometric sans-serif typefaces. Kreadon offers a simple and graphically appealing typographic style in seven weights, ranging from ExtraLight to ExtraBold, perfect for both headlines and main-body texting. Moreover, it possesses the capability of swappable alternative characters thanks to Opentype features, which contributes to its adaptability. 
+
+![Sample Image](documentation/37-02.png)
 
 Kreadon was initially designed for the branding of StudioGnu, the creators’ community based on the Vocaloid culture, but it is available to the public to inspire and explore further creativity inside and outside the community.
 You can find a detailed description of the typographic effects of each OpenType feature below:
