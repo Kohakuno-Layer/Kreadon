@@ -59,7 +59,7 @@ Fonts are built automatically by GitHub Actions.
 - Make adjustments to the glyph design such as _K.ss02_.
 - Modify the data to solve errors.
 
-To confirm ditails of updates before Version 1.30, visit [update_log] (https://github.com/Kohakuno-Layer/Kreadon/blob/main/update_log.md).
+To confirm ditails of updates before Version 1.30, visit [update_log](https://github.com/Kohakuno-Layer/Kreadon/blob/main/update_log.md).
 
 ## License
 
