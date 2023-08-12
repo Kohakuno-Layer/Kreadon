@@ -34,6 +34,8 @@ Additionally, Kreadon provides some advanced features for your typography:
 * `Cyrillic Localization`: Just like with Latin alphabets, the range of Cyrillic alphabets varies for each language. Kreadon is designed to accommodate a diverse range of characters. In Bulgarian, certain glyphs appear distinct from those used in other languages, hence Kreadon provides language-specific variations.
 * `Numerics Variation`: Kreadon has a variety of numeric glyphs to enhance the flexibility of your typography. For example, Kreadon has old-style numerics, full-width numerics, and circled numerics.
 
+**Glyphs design sample is available [here](https://github.com/Kohakuno-Layer/Kreadon/blob/main/specimen.md).**
+
 ## Designer
 
 **Kohakuno**, Tokyo-based typographer.
