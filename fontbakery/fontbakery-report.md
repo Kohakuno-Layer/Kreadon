@@ -2,32 +2,28 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[21] Kreadon-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+<details><summary><b>[24] Kreadon-Medium.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 🔥 **FAIL** Font names are incorrect:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Kreadon Medium | Kreadon Medium |
-| Subfamily Name | Regular | Regular |
+| Family Name | Kreadon Extra Light | Kreadon Medium |
+| Subfamily Name | Bold | Regular |
 | Full Name | Kreadon Medium | Kreadon Medium |
-| Poscript Name | Kreadon-M | Kreadon-Medium |
+| Poscript Name | Kreadon-Medium | Kreadon-Medium |
 | Typographic Family Name | Kreadon | Kreadon |
 | Typographic Subfamily Name | Medium | Medium | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1100 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** OS/2.sTypoLineGap is "200" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** hhea.lineGap is "200" it should be 0 [code: bad-hhea.lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kreadon-Medium.ttf', 'fonts/ttf/Kreadon-Bold.ttf', 'fonts/ttf/Kreadon-Demi.ttf', 'fonts/ttf/Kreadon-Light.ttf', 'fonts/ttf/Kreadon-ExtraLight.ttf', 'fonts/ttf/Kreadon-ExtraBold.ttf', 'fonts/ttf/Kreadon-Regular.ttf']. [code: missing-os2-fsselection-bit7]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1213, but got 880 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 458, but got 220 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
 
 
@@ -37,7 +33,20 @@ Fontbakery version: 0.8.13
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ j̦́ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking head.macStyle value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/mac_style">com.google.fonts/check/mac_style</a>)</summary><div>
+
+
+* 🔥 **FAIL** head macStyle BOLD bit should be unset. [code: bad-BOLD]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 fsSelection REGULAR bit should be set. [code: bad-REGULAR]
+* 🔥 **FAIL** OS/2 fsSelection BOLD bit should be unset. [code: bad-BOLD]
+</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
+
+
+* 🔥 **FAIL** On the 'name' table, the full font name 'Kreadon Medium' does not begin with the font family name 'Kreadon Extra Light' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check glyphs do not have duplicate components which have the same x,y coordinates. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_non_transformed_duplicate_components">com.google.fonts/check/glyf_non_transformed_duplicate_components</a>)</summary><div>
 
 
@@ -291,6 +300,10 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -327,7 +340,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni00B2 (U+00B2) contains a short segment L<<103.0,512.0>--<109.0,512.0>>
 
-	* onehalf (U+00BD) contains a short segment L<<649.0,45.0>--<655.0,45.0>>
+	* onehalf (U+00BD) contains a short segment L<<699.0,45.0>--<705.0,45.0>>
 
 	* Ntilde (U+00D1) contains a short segment L<<533.0,115.0>--<532.0,141.0>>
 
@@ -366,6 +379,12 @@ The following glyphs do not have the recommended number of contours:
 	* dcaron (U+010F) contains a short segment L<<436.0,0.0>--<436.0,11.0>>
 
 	* dcroat (U+0111) contains a short segment L<<436.0,0.0>--<436.0,11.0>>
+
+	* Gcircumflex (U+011C) contains a short segment B<<779.0,374.0>-<780.0,368.0>-<780.0,361.5>>
+
+	* Gcircumflex (U+011C) contains a short segment B<<780.0,361.5>-<780.0,355.0>-<780.0,349.0>>
+
+	* gcircumflex (U+011D) contains a short segment L<<436.0,458.0>--<436.0,470.0>>
 
 	* Gbreve (U+011E) contains a short segment B<<779.0,374.0>-<780.0,368.0>-<780.0,361.5>>
 
@@ -410,6 +429,8 @@ The following glyphs do not have the recommended number of contours:
 	* uni018F (U+018F) contains a short segment B<<50.0,349.0>-<50.0,355.0>-<50.0,361.5>>
 
 	* uni018F (U+018F) contains a short segment B<<50.0,361.5>-<50.0,368.0>-<51.0,374.0>>
+
+	* uni01CE (U+01CE) contains a short segment L<<440.0,0.0>--<440.0,8.0>>
 
 	* Nu (U+039D) contains a short segment L<<533.0,115.0>--<532.0,141.0>>
 
@@ -475,7 +496,13 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni1EB7 (U+1EB7) contains a short segment L<<440.0,0.0>--<440.0,8.0>>
 
-	* uni2082 (U+2082) contains a short segment L<<103.0,-55.0>--<109.0,-55.0>> 
+	* uni2082 (U+2082) contains a short segment L<<103.0,-55.0>--<109.0,-55.0>>
+
+	* dong (U+20AB) contains a short segment L<<436.0,0.0>--<436.0,11.0>>
+
+	* uni2154 (U+2154) contains a short segment L<<208.0,407.0>--<214.0,407.0>>
+
+	* uni2156 (U+2156) contains a short segment L<<208.0,412.0>--<214.0,412.0>> 
 
 	* fl (U+FB02) contains a short segment B<<462.5,-12.5>-<452.0,-14.0>-<442.0,-14.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -494,6 +521,8 @@ The following glyphs do not have the recommended number of contours:
 	* Etatonos (U+0389): L<<655.0,421.0>--<654.0,733.0>>
 
 	* H (U+0048): L<<525.0,421.0>--<524.0,733.0>>
+
+	* Hcircumflex (U+0124): L<<525.0,421.0>--<524.0,733.0>>
 
 	* M (U+004D): L<<692.0,0.0>--<691.0,540.0>>
 
@@ -523,19 +552,23 @@ The following glyphs do not have the recommended number of contours:
 
 	* eng (U+014B): L<<131.0,380.0>--<130.0,0.0>>
 
-	* ij (U+0133): L<<323.0,-60.0>--<322.0,398.0>>
+	* ij (U+0133): L<<273.0,-60.0>--<272.0,470.0>>
 
-	* ij (U+0133): L<<394.0,470.0>--<393.0,-101.0>>
+	* ij (U+0133): L<<344.0,470.0>--<343.0,-101.0>>
 
-	* j (U+006A): L<<103.0,-60.0>--<102.0,398.0>>
+	* j (U+006A): L<<103.0,-60.0>--<102.0,470.0>>
 
 	* j (U+006A): L<<174.0,470.0>--<173.0,-101.0>>
+
+	* jcircumflex (U+0135): L<<103.0,-60.0>--<102.0,470.0>>
+
+	* jcircumflex (U+0135): L<<174.0,470.0>--<173.0,-101.0>>
 
 	* trademark (U+2122): L<<255.0,470.0>--<254.0,733.0>>
 
 	* uni0145 (U+0145): L<<71.0,0.0>--<70.0,733.0>>
 
-	* uni0237 (U+0237): L<<103.0,-60.0>--<102.0,398.0>>
+	* uni0237 (U+0237): L<<103.0,-60.0>--<102.0,470.0>>
 
 	* uni0237 (U+0237): L<<174.0,470.0>--<173.0,-101.0>>
 
@@ -561,35 +594,22 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0427 (U+0427): L<<469.0,368.0>--<468.0,733.0>>
 
-	* uni043C (U+043C): L<<468.0,0.0>--<467.0,270.0>> 
+	* uni043C (U+043C): L<<468.0,0.0>--<467.0,270.0>>
 
-	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[24] Kreadon-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>>
 
+	* uni0E3F (U+0E3F): L<<65.0,0.0>--<64.0,733.0>> 
 
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Kreadon Bold | Kreadon |
-| Subfamily Name | Regular | Bold |
-| Full Name | Kreadon Bold | Kreadon Bold |
-| Poscript Name | Kreadon-B | Kreadon-Bold |
-| Typographic Family Name | Kreadon | N/A |
-| Typographic Subfamily Name | Bold | N/A | [code: bad-names]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+	* uni2116 (U+2116): L<<71.0,0.0>--<70.0,733.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[21] Kreadon-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1100 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** OS/2.sTypoLineGap is "200" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** hhea.lineGap is "200" it should be 0 [code: bad-hhea.lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kreadon-Medium.ttf', 'fonts/ttf/Kreadon-Bold.ttf', 'fonts/ttf/Kreadon-Demi.ttf', 'fonts/ttf/Kreadon-Light.ttf', 'fonts/ttf/Kreadon-ExtraLight.ttf', 'fonts/ttf/Kreadon-ExtraBold.ttf', 'fonts/ttf/Kreadon-Regular.ttf']. [code: missing-os2-fsselection-bit7]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1213, but got 880 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 458, but got 220 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
 
 
@@ -599,16 +619,7 @@ The following glyphs do not have the recommended number of contours:
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ [code: soft-dotted]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking head.macStyle value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/mac_style">com.google.fonts/check/mac_style</a>)</summary><div>
-
-
-* 🔥 **FAIL** head macStyle BOLD bit should be set. [code: bad-BOLD]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 fsSelection REGULAR bit should be unset. [code: bad-REGULAR]
-* 🔥 **FAIL** OS/2 fsSelection BOLD bit should be set. [code: bad-BOLD]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ j̦́ [code: soft-dotted]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check glyphs do not have duplicate components which have the same x,y coordinates. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_non_transformed_duplicate_components">com.google.fonts/check/glyf_non_transformed_duplicate_components</a>)</summary><div>
 
 
@@ -862,6 +873,10 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -944,11 +959,17 @@ The following glyphs do not have the recommended number of contours:
 
 	* dcroat (U+0111) contains a short segment L<<409.0,0.0>--<409.0,8.0>>
 
+	* gcircumflex (U+011D) contains a short segment L<<409.0,461.0>--<409.0,470.0>>
+
 	* gbreve (U+011F) contains a short segment L<<409.0,461.0>--<409.0,470.0>>
 
 	* gdotaccent (U+0121) contains a short segment L<<409.0,461.0>--<409.0,470.0>>
 
 	* uni0123 (U+0123) contains a short segment L<<409.0,461.0>--<409.0,470.0>>
+
+	* uni01CE (U+01CE) contains a short segment L<<409.0,461.0>--<409.0,470.0>>
+
+	* uni01CE (U+01CE) contains a short segment L<<413.0,0.0>--<413.0,5.0>>
 
 	* alphatonos (U+03AC) contains a short segment L<<418.0,458.0>--<418.0,470.0>>
 
@@ -1024,11 +1045,19 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni2089 (U+2089) contains a short segment L<<158.0,37.0>--<155.0,37.0>>
 
+	* dong (U+20AB) contains a short segment L<<409.0,0.0>--<409.0,8.0>>
+
 	* Euro (U+20AC) contains a short segment B<<76.0,368.0>-<76.0,381.0>-<77.0,393.0>>
 
 	* Euro (U+20AC) contains a short segment B<<225.0,393.0>-<224.0,381.0>-<224.0,368.0>>
 
 	* uni20BD (U+20BD) contains a short segment B<<339.0,260.5>-<330.0,261.0>-<318.0,261.0>>
+
+	* uni2151 (U+2151) contains a short segment L<<753.0,137.0>--<750.0,137.0>>
+
+	* uni2159 (U+2159) contains a short segment B<<742.0,231.0>-<745.0,231.0>-<748.0,231.0>>
+
+	* uni215A (U+215A) contains a short segment B<<735.0,231.0>-<738.0,231.0>-<741.0,231.0>>
 
 	* fl (U+FB02) contains a short segment B<<557.0,104.0>-<566.0,104.0>-<575.0,105.0>> 
 
@@ -1056,6 +1085,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* H (U+0048): L<<525.0,441.0>--<524.0,733.0>>
 
+	* Hcircumflex (U+0124): L<<525.0,441.0>--<524.0,733.0>>
+
 	* M (U+004D): L<<696.0,0.0>--<695.0,333.0>>
 
 	* M (U+004D): L<<71.0,0.0>--<70.0,733.0>>
@@ -1078,19 +1109,23 @@ The following glyphs do not have the recommended number of contours:
 
 	* Phi (U+03A6): L<<358.0,127.0>--<357.0,607.0>>
 
-	* ij (U+0133): L<<410.0,-20.0>--<409.0,358.0>>
+	* ij (U+0133): L<<353.0,-20.0>--<352.0,470.0>>
 
-	* ij (U+0133): L<<534.0,470.0>--<533.0,-68.0>>
+	* ij (U+0133): L<<477.0,470.0>--<476.0,-68.0>>
 
-	* j (U+006A): L<<123.0,-20.0>--<122.0,358.0>>
+	* j (U+006A): L<<123.0,-20.0>--<122.0,470.0>>
 
 	* j (U+006A): L<<247.0,470.0>--<246.0,-68.0>>
+
+	* jcircumflex (U+0135): L<<123.0,-20.0>--<122.0,470.0>>
+
+	* jcircumflex (U+0135): L<<247.0,470.0>--<246.0,-68.0>>
 
 	* trademark (U+2122): L<<266.0,470.0>--<265.0,733.0>>
 
 	* uni0145 (U+0145): L<<71.0,0.0>--<70.0,733.0>>
 
-	* uni0237 (U+0237): L<<123.0,-20.0>--<122.0,358.0>>
+	* uni0237 (U+0237): L<<123.0,-20.0>--<122.0,470.0>>
 
 	* uni0237 (U+0237): L<<247.0,470.0>--<246.0,-68.0>>
 
@@ -1118,9 +1153,13 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0427 (U+0427): L<<469.0,391.0>--<468.0,733.0>>
 
-	* uni043C (U+043C): L<<501.0,0.0>--<500.0,177.0>> 
+	* uni043C (U+043C): L<<501.0,0.0>--<500.0,177.0>>
 
-	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>> [code: found-semi-vertical]
+	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>>
+
+	* uni0E3F (U+0E3F): L<<65.0,1.0>--<64.0,733.0>> 
+
+	* uni2116 (U+2116): L<<71.0,0.0>--<70.0,733.0>> [code: found-semi-vertical]
 </div></details><br></div></details><details><summary><b>[22] Kreadon-Demi.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
@@ -1132,26 +1171,22 @@ The following glyphs do not have the recommended number of contours:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Kreadon Demi | Kreadon Demi |
-| Subfamily Name | Regular | Regular |
+| Family Name | Kreadon Light | Kreadon Demi |
+| Subfamily Name | Bold | Regular |
 | Full Name | Kreadon Demi | Kreadon Demi Regular |
-| Poscript Name | Kreadon-D | KreadonDemi-Regular |
+| Poscript Name | Kreadon-Demi | KreadonDemi-Regular |
 | Typographic Family Name | Kreadon | N/A |
 | Typographic Subfamily Name | Demi | N/A | [code: bad-names]
 * ⚠ **WARN** Regular missing from full name [code: lacks-regular]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1100 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** OS/2.sTypoLineGap is "200" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** hhea.lineGap is "200" it should be 0 [code: bad-hhea.lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kreadon-Medium.ttf', 'fonts/ttf/Kreadon-Bold.ttf', 'fonts/ttf/Kreadon-Demi.ttf', 'fonts/ttf/Kreadon-Light.ttf', 'fonts/ttf/Kreadon-ExtraLight.ttf', 'fonts/ttf/Kreadon-ExtraBold.ttf', 'fonts/ttf/Kreadon-Regular.ttf']. [code: missing-os2-fsselection-bit7]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1213, but got 880 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 458, but got 220 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
 
 
@@ -1161,7 +1196,11 @@ The following glyphs do not have the recommended number of contours:
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ j̦́ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
+
+
+* 🔥 **FAIL** On the 'name' table, the full font name 'Kreadon Demi' does not begin with the font family name 'Kreadon Light' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check glyphs do not have duplicate components which have the same x,y coordinates. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_non_transformed_duplicate_components">com.google.fonts/check/glyf_non_transformed_duplicate_components</a>)</summary><div>
 
 
@@ -1415,209 +1454,15 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
 	 uni20DD (U+20DD) [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have segments which seem very short:
-
-	* at (U+0040) contains a short segment L<<594.0,502.0>--<594.0,512.0>>
-
-	* G (U+0047) contains a short segment B<<786.0,391.0>-<787.0,378.0>-<787.0,369.0>>
-
-	* G (U+0047) contains a short segment B<<787.0,369.0>-<787.0,360.0>-<787.0,349.0>>
-
-	* a (U+0061) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* a (U+0061) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* b (U+0062) contains a short segment L<<161.0,9.0>--<161.0,0.0>>
-
-	* d (U+0064) contains a short segment L<<423.0,0.0>--<423.0,9.0>>
-
-	* g (U+0067) contains a short segment L<<423.0,460.0>--<423.0,470.0>>
-
-	* p (U+0070) contains a short segment L<<161.0,470.0>--<161.0,460.0>>
-
-	* q (U+0071) contains a short segment L<<427.0,460.0>--<427.0,470.0>>
-
-	* ordfeminine (U+00AA) contains a short segment L<<211.0,730.0>--<211.0,735.0>>
-
-	* ordfeminine (U+00AA) contains a short segment L<<213.0,500.0>--<213.0,503.0>>
-
-	* uni00B2 (U+00B2) contains a short segment L<<129.0,523.0>--<136.0,524.0>>
-
-	* onehalf (U+00BD) contains a short segment L<<671.0,56.0>--<678.0,57.0>>
-
-	* germandbls (U+00DF) contains a short segment B<<319.0,339.0>-<307.0,340.0>-<295.0,340.5>>
-
-	* germandbls (U+00DF) contains a short segment B<<295.0,340.5>-<283.0,341.0>-<272.0,341.0>>
-
-	* germandbls (U+00DF) contains a short segment B<<272.0,438.0>-<283.0,438.0>-<295.0,439.0>>
-
-	* germandbls (U+00DF) contains a short segment B<<295.0,439.0>-<307.0,440.0>-<319.0,440.0>>
-
-	* agrave (U+00E0) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* agrave (U+00E0) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* aacute (U+00E1) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* aacute (U+00E1) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* acircumflex (U+00E2) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* acircumflex (U+00E2) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* atilde (U+00E3) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* atilde (U+00E3) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* adieresis (U+00E4) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* adieresis (U+00E4) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* aring (U+00E5) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* aring (U+00E5) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* ae (U+00E6) contains a short segment B<<899.0,233.0>-<899.0,224.0>-<899.0,216.0>>
-
-	* ae (U+00E6) contains a short segment B<<899.0,216.0>-<899.0,208.0>-<898.0,199.0>>
-
-	* amacron (U+0101) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* amacron (U+0101) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* abreve (U+0103) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* abreve (U+0103) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* aogonek (U+0105) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* aogonek (U+0105) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* dcaron (U+010F) contains a short segment L<<423.0,0.0>--<423.0,9.0>>
-
-	* dcroat (U+0111) contains a short segment L<<423.0,0.0>--<423.0,9.0>>
-
-	* Gbreve (U+011E) contains a short segment B<<786.0,391.0>-<787.0,378.0>-<787.0,369.0>>
-
-	* Gbreve (U+011E) contains a short segment B<<787.0,369.0>-<787.0,360.0>-<787.0,349.0>>
-
-	* gbreve (U+011F) contains a short segment L<<423.0,460.0>--<423.0,470.0>>
-
-	* Gdotaccent (U+0120) contains a short segment B<<786.0,391.0>-<787.0,378.0>-<787.0,369.0>>
-
-	* Gdotaccent (U+0120) contains a short segment B<<787.0,369.0>-<787.0,360.0>-<787.0,349.0>>
-
-	* gdotaccent (U+0121) contains a short segment L<<423.0,460.0>--<423.0,470.0>>
-
-	* uni0122 (U+0122) contains a short segment B<<786.0,391.0>-<787.0,378.0>-<787.0,369.0>>
-
-	* uni0122 (U+0122) contains a short segment B<<787.0,369.0>-<787.0,360.0>-<787.0,349.0>>
-
-	* uni0123 (U+0123) contains a short segment L<<423.0,460.0>--<423.0,470.0>>
-
-	* eng (U+014B) contains a short segment B<<312.0,-131.5>-<320.0,-133.0>-<329.0,-133.0>>
-
-	* oe (U+0153) contains a short segment B<<926.0,233.0>-<926.0,224.0>-<926.0,215.5>>
-
-	* oe (U+0153) contains a short segment B<<926.0,215.5>-<926.0,207.0>-<925.0,198.0>>
-
-	* uni018F (U+018F) contains a short segment B<<50.0,349.0>-<50.0,360.0>-<50.0,369.0>>
-
-	* alphatonos (U+03AC) contains a short segment L<<427.0,458.0>--<427.0,470.0>>
-
-	* alpha (U+03B1) contains a short segment L<<427.0,458.0>--<427.0,470.0>>
-
-	* pi (U+03C0) contains a short segment B<<501.0,86.0>-<508.0,86.0>-<517.0,87.0>>
-
-	* uni03D7 (U+03D7) contains a short segment B<<325.0,-131.5>-<334.0,-133.0>-<343.0,-133.0>>
-
-	* uni0411 (U+0411) contains a short segment B<<305.5,353.0>-<296.0,353.0>-<282.0,352.0>>
-
-	* uni0430 (U+0430) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni0430 (U+0430) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni0440 (U+0440) contains a short segment L<<161.0,470.0>--<161.0,460.0>>
-
-	* uni1E9E (U+1E9E) contains a short segment B<<346.0,336.0>-<334.0,337.0>-<322.0,337.5>>
-
-	* uni1E9E (U+1E9E) contains a short segment B<<322.0,337.5>-<310.0,338.0>-<299.0,338.0>>
-
-	* uni1E9E (U+1E9E) contains a short segment B<<299.0,435.0>-<310.0,435.0>-<322.0,435.5>>
-
-	* uni1E9E (U+1E9E) contains a short segment B<<322.0,435.5>-<334.0,436.0>-<346.0,437.0>>
-
-	* uni1EA1 (U+1EA1) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EA1 (U+1EA1) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EA3 (U+1EA3) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EA3 (U+1EA3) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EA5 (U+1EA5) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EA5 (U+1EA5) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EA7 (U+1EA7) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EA7 (U+1EA7) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EA9 (U+1EA9) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EA9 (U+1EA9) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EAB (U+1EAB) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EAB (U+1EAB) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EAD (U+1EAD) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EAD (U+1EAD) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EAF (U+1EAF) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EAF (U+1EAF) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EB1 (U+1EB1) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EB1 (U+1EB1) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EB3 (U+1EB3) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EB3 (U+1EB3) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EB5 (U+1EB5) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EB5 (U+1EB5) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni1EB7 (U+1EB7) contains a short segment L<<423.0,459.0>--<423.0,470.0>>
-
-	* uni1EB7 (U+1EB7) contains a short segment L<<427.0,0.0>--<427.0,7.0>>
-
-	* uni2082 (U+2082) contains a short segment L<<129.0,-44.0>--<136.0,-43.0>>
-
-	* Euro (U+20AC) contains a short segment B<<76.0,368.0>-<76.0,382.0>-<77.0,397.0>>
-
-	* Euro (U+20AC) contains a short segment B<<192.0,397.0>-<190.0,383.0>-<190.0,368.0>>
-
-	* uni20BD (U+20BD) contains a short segment B<<322.0,274.0>-<313.0,274.0>-<300.0,274.0>>
-
-	* fi (U+FB01) contains a short segment B<<293.0,645.0>-<282.0,648.0>-<274.0,649.0>>
-
-	* fi (U+FB01) contains a short segment B<<274.0,649.0>-<266.0,650.0>-<256.0,650.0>>
-
-	* fl (U+FB02) contains a short segment B<<500.0,84.0>-<507.0,84.0>-<515.0,85.0>> 
-
-	* fl (U+FB02) contains a short segment B<<515.0,85.0>-<523.0,86.0>-<534.0,88.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
@@ -1634,6 +1479,8 @@ The following glyphs do not have the recommended number of contours:
 	* Etatonos (U+0389): L<<685.0,431.0>--<684.0,733.0>>
 
 	* H (U+0048): L<<525.0,431.0>--<524.0,733.0>>
+
+	* Hcircumflex (U+0124): L<<525.0,431.0>--<524.0,733.0>>
 
 	* M (U+004D): L<<694.0,0.0>--<693.0,437.0>>
 
@@ -1659,19 +1506,23 @@ The following glyphs do not have the recommended number of contours:
 
 	* eng (U+014B): L<<157.0,363.0>--<156.0,0.0>>
 
-	* ij (U+0133): L<<366.0,-40.0>--<365.0,378.0>>
+	* ij (U+0133): L<<313.0,-40.0>--<312.0,470.0>>
 
-	* ij (U+0133): L<<464.0,470.0>--<463.0,-84.0>>
+	* ij (U+0133): L<<411.0,470.0>--<410.0,-84.0>>
 
-	* j (U+006A): L<<113.0,-40.0>--<112.0,378.0>>
+	* j (U+006A): L<<113.0,-40.0>--<112.0,470.0>>
 
 	* j (U+006A): L<<211.0,470.0>--<210.0,-84.0>>
+
+	* jcircumflex (U+0135): L<<113.0,-40.0>--<112.0,470.0>>
+
+	* jcircumflex (U+0135): L<<211.0,470.0>--<210.0,-84.0>>
 
 	* trademark (U+2122): L<<261.0,470.0>--<260.0,733.0>>
 
 	* uni0145 (U+0145): L<<71.0,0.0>--<70.0,733.0>>
 
-	* uni0237 (U+0237): L<<113.0,-40.0>--<112.0,378.0>>
+	* uni0237 (U+0237): L<<113.0,-40.0>--<112.0,470.0>>
 
 	* uni0237 (U+0237): L<<211.0,470.0>--<210.0,-84.0>>
 
@@ -1697,35 +1548,22 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0427 (U+0427): L<<469.0,380.0>--<468.0,733.0>>
 
-	* uni043C (U+043C): L<<485.0,0.0>--<484.0,223.0>> 
+	* uni043C (U+043C): L<<485.0,0.0>--<484.0,223.0>>
 
-	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[21] Kreadon-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>>
 
+	* uni0E3F (U+0E3F): L<<65.0,0.0>--<64.0,733.0>> 
 
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Kreadon Light | Kreadon Light |
-| Subfamily Name | Regular | Regular |
-| Full Name | Kreadon Light | Kreadon Light |
-| Poscript Name | Kreadon-L | Kreadon-Light |
-| Typographic Family Name | Kreadon | Kreadon |
-| Typographic Subfamily Name | Light | Light | [code: bad-names]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+	* uni2116 (U+2116): L<<71.0,0.0>--<70.0,733.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[20] Kreadon-Light.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1100 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** OS/2.sTypoLineGap is "200" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** hhea.lineGap is "200" it should be 0 [code: bad-hhea.lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kreadon-Medium.ttf', 'fonts/ttf/Kreadon-Bold.ttf', 'fonts/ttf/Kreadon-Demi.ttf', 'fonts/ttf/Kreadon-Light.ttf', 'fonts/ttf/Kreadon-ExtraLight.ttf', 'fonts/ttf/Kreadon-ExtraBold.ttf', 'fonts/ttf/Kreadon-Regular.ttf']. [code: missing-os2-fsselection-bit7]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1213, but got 880 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 458, but got 220 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
 
 
@@ -1735,7 +1573,7 @@ The following glyphs do not have the recommended number of contours:
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ j̦́ [code: soft-dotted]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check glyphs do not have duplicate components which have the same x,y coordinates. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_non_transformed_duplicate_components">com.google.fonts/check/glyf_non_transformed_duplicate_components</a>)</summary><div>
 
 
@@ -1989,6 +1827,10 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -2013,8 +1855,6 @@ The following glyphs do not have the recommended number of contours:
 
 	* g (U+0067) contains a short segment L<<456.0,458.0>--<456.0,470.0>>
 
-	* j (U+006A) contains a short segment B<<27.0,-177.5>-<32.0,-178.0>-<37.0,-178.0>>
-
 	* p (U+0070) contains a short segment L<<114.0,470.0>--<114.0,460.0>>
 
 	* q (U+0071) contains a short segment L<<456.0,460.0>--<456.0,470.0>>
@@ -2023,7 +1863,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni00B2 (U+00B2) contains a short segment L<<89.0,501.0>--<98.0,502.0>>
 
-	* onehalf (U+00BD) contains a short segment L<<637.0,34.0>--<646.0,35.0>>
+	* onehalf (U+00BD) contains a short segment L<<687.0,34.0>--<696.0,35.0>>
 
 	* agrave (U+00E0) contains a short segment L<<458.0,0.0>--<458.0,8.0>>
 
@@ -2051,6 +1891,12 @@ The following glyphs do not have the recommended number of contours:
 
 	* dcroat (U+0111) contains a short segment L<<456.0,0.0>--<456.0,10.0>>
 
+	* Gcircumflex (U+011C) contains a short segment B<<780.0,364.0>-<780.0,360.0>-<780.0,356.0>>
+
+	* Gcircumflex (U+011C) contains a short segment B<<780.0,356.0>-<780.0,352.0>-<780.0,349.0>>
+
+	* gcircumflex (U+011D) contains a short segment L<<456.0,458.0>--<456.0,470.0>>
+
 	* Gbreve (U+011E) contains a short segment B<<780.0,364.0>-<780.0,360.0>-<780.0,356.0>>
 
 	* Gbreve (U+011E) contains a short segment B<<780.0,356.0>-<780.0,352.0>-<780.0,349.0>>
@@ -2068,8 +1914,6 @@ The following glyphs do not have the recommended number of contours:
 	* uni0122 (U+0122) contains a short segment B<<780.0,356.0>-<780.0,352.0>-<780.0,349.0>>
 
 	* uni0123 (U+0123) contains a short segment L<<456.0,458.0>--<456.0,470.0>>
-
-	* ij (U+0133) contains a short segment B<<227.0,-177.5>-<232.0,-178.0>-<237.0,-178.0>>
 
 	* lslash (U+0142) contains a short segment B<<218.0,43.0>-<222.0,43.0>-<228.5,43.5>>
 
@@ -2093,7 +1937,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni018F (U+018F) contains a short segment L<<724.0,364.0>--<725.0,366.0>>
 
-	* uni0237 (U+0237) contains a short segment B<<27.0,-177.5>-<32.0,-178.0>-<37.0,-178.0>>
+	* uni01CE (U+01CE) contains a short segment L<<458.0,0.0>--<458.0,8.0>>
 
 	* alphatonos (U+03AC) contains a short segment L<<456.0,458.0>--<456.0,470.0>>
 
@@ -2161,6 +2005,14 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni2082 (U+2082) contains a short segment L<<89.0,-66.0>--<98.0,-65.0>>
 
+	* dong (U+20AB) contains a short segment L<<456.0,0.0>--<456.0,10.0>>
+
+	* uni20B4 (U+20B4) contains a short segment B<<284.0,355.0>-<272.0,351.0>-<261.0,347.0>>
+
+	* uni2154 (U+2154) contains a short segment L<<196.0,396.0>--<205.0,397.0>>
+
+	* uni2156 (U+2156) contains a short segment L<<196.0,399.0>--<205.0,400.0>>
+
 	* integral (U+222B) contains a short segment B<<412.0,695.5>-<407.0,696.0>-<402.0,696.0>>
 
 	* integral (U+222B) contains a short segment B<<77.5,-74.5>-<83.0,-75.0>-<87.0,-75.0>>
@@ -2191,6 +2043,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* Hbar (U+0126): L<<535.0,411.0>--<534.0,575.0>>
 
+	* Hcircumflex (U+0124): L<<535.0,411.0>--<534.0,733.0>>
+
 	* M (U+004D): L<<688.0,0.0>--<687.0,545.0>>
 
 	* Mu (U+039C): L<<688.0,0.0>--<687.0,545.0>>
@@ -2217,13 +2071,17 @@ The following glyphs do not have the recommended number of contours:
 
 	* eng (U+014B): L<<111.0,402.0>--<110.0,0.0>>
 
-	* ij (U+0133): L<<309.0,-60.0>--<308.0,418.0>>
+	* ij (U+0133): L<<259.0,-60.0>--<258.0,470.0>>
 
-	* ij (U+0133): L<<362.0,470.0>--<361.0,-91.0>>
+	* ij (U+0133): L<<312.0,470.0>--<311.0,-91.0>>
 
-	* j (U+006A): L<<109.0,-60.0>--<108.0,418.0>>
+	* j (U+006A): L<<109.0,-60.0>--<108.0,470.0>>
 
 	* j (U+006A): L<<162.0,470.0>--<161.0,-91.0>>
+
+	* jcircumflex (U+0135): L<<109.0,-60.0>--<108.0,470.0>>
+
+	* jcircumflex (U+0135): L<<162.0,470.0>--<161.0,-91.0>>
 
 	* sterling (U+00A3): L<<365.0,350.0>--<192.0,349.0>>
 
@@ -2231,7 +2089,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0145 (U+0145): L<<71.0,0.0>--<70.0,733.0>>
 
-	* uni0237 (U+0237): L<<109.0,-60.0>--<108.0,418.0>>
+	* uni0237 (U+0237): L<<109.0,-60.0>--<108.0,470.0>>
 
 	* uni0237 (U+0237): L<<162.0,470.0>--<161.0,-91.0>>
 
@@ -2255,9 +2113,13 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0427 (U+0427): L<<484.0,360.0>--<483.0,733.0>>
 
-	* uni043C (U+043C): L<<474.0,0.0>--<473.0,310.0>> 
+	* uni043C (U+043C): L<<474.0,0.0>--<473.0,310.0>>
 
-	* uni043C (U+043C): L<<55.0,0.0>--<54.0,470.0>> [code: found-semi-vertical]
+	* uni043C (U+043C): L<<55.0,0.0>--<54.0,470.0>>
+
+	* uni0E3F (U+0E3F): L<<66.0,0.0>--<65.0,733.0>> 
+
+	* uni2116 (U+2116): L<<71.0,0.0>--<70.0,733.0>> [code: found-semi-vertical]
 </div></details><br></div></details><details><summary><b>[22] Kreadon-ExtraLight.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
@@ -2272,22 +2134,18 @@ The following glyphs do not have the recommended number of contours:
 | Family Name | Kreadon Extra Light | Kreadon Extra Light |
 | Subfamily Name | Regular | Regular |
 | Full Name | Kreadon Extra Light | Kreadon Extra Light |
-| Poscript Name | Kreadon-EL | KreadonExtra-Light |
+| Poscript Name | Kreadon-ExtraLight | KreadonExtra-Light |
 | Typographic Family Name | Kreadon | Kreadon Extra |
 | Typographic Subfamily Name | Extra Light | Light | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1100 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** OS/2.sTypoLineGap is "200" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** hhea.lineGap is "200" it should be 0 [code: bad-hhea.lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kreadon-Medium.ttf', 'fonts/ttf/Kreadon-Bold.ttf', 'fonts/ttf/Kreadon-Demi.ttf', 'fonts/ttf/Kreadon-Light.ttf', 'fonts/ttf/Kreadon-ExtraLight.ttf', 'fonts/ttf/Kreadon-ExtraBold.ttf', 'fonts/ttf/Kreadon-Regular.ttf']. [code: missing-os2-fsselection-bit7]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1213, but got 880 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 458, but got 220 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
 
 
@@ -2297,7 +2155,7 @@ The following glyphs do not have the recommended number of contours:
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ j̦́ [code: soft-dotted]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check glyphs do not have duplicate components which have the same x,y coordinates. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_non_transformed_duplicate_components">com.google.fonts/check/glyf_non_transformed_duplicate_components</a>)</summary><div>
 
 
@@ -2555,6 +2413,10 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -2595,6 +2457,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* Hbar (U+0126): L<<544.0,400.0>--<543.0,584.0>>
 
+	* Hcircumflex (U+0124): L<<544.0,400.0>--<543.0,733.0>>
+
 	* M (U+004D): L<<684.0,0.0>--<683.0,550.0>>
 
 	* Mu (U+039C): L<<684.0,0.0>--<683.0,550.0>>
@@ -2617,19 +2481,23 @@ The following glyphs do not have the recommended number of contours:
 
 	* asterisk (U+002A): L<<225.0,771.0>--<224.0,645.0>>
 
-	* ij (U+0133): L<<294.0,-60.0>--<293.0,438.0>>
+	* ij (U+0133): L<<244.0,-60.0>--<243.0,470.0>>
 
-	* ij (U+0133): L<<329.0,470.0>--<328.0,-81.0>>
+	* ij (U+0133): L<<279.0,470.0>--<278.0,-81.0>>
 
-	* j (U+006A): L<<114.0,-60.0>--<113.0,438.0>>
+	* j (U+006A): L<<114.0,-60.0>--<113.0,470.0>>
 
 	* j (U+006A): L<<149.0,470.0>--<148.0,-81.0>>
+
+	* jcircumflex (U+0135): L<<114.0,-60.0>--<113.0,470.0>>
+
+	* jcircumflex (U+0135): L<<149.0,470.0>--<148.0,-81.0>>
 
 	* thorn (U+00FE): L<<94.0,675.0>--<92.0,360.0>>
 
 	* uni0145 (U+0145): L<<71.0,0.0>--<70.0,733.0>>
 
-	* uni0237 (U+0237): L<<114.0,-60.0>--<113.0,438.0>>
+	* uni0237 (U+0237): L<<114.0,-60.0>--<113.0,470.0>>
 
 	* uni0237 (U+0237): L<<149.0,470.0>--<148.0,-81.0>>
 
@@ -2653,10 +2521,14 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0427 (U+0427): L<<498.0,351.0>--<497.0,733.0>>
 
-	* uni043C (U+043C): L<<480.0,0.0>--<479.0,350.0>> 
+	* uni043C (U+043C): L<<480.0,0.0>--<479.0,350.0>>
 
-	* uni043C (U+043C): L<<56.0,0.0>--<55.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[23] Kreadon-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+	* uni043C (U+043C): L<<56.0,0.0>--<55.0,470.0>>
+
+	* uni0E3F (U+0E3F): L<<67.0,0.0>--<66.0,733.0>> 
+
+	* uni2116 (U+2116): L<<71.0,0.0>--<70.0,733.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[25] Kreadon-ExtraBold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
 
 
 * 🔥 **FAIL** Best SubFamily name is 'Extra Bold'. Expected OS/2 usWeightClass is 700, got 800. [code: bad-value]
@@ -2667,25 +2539,21 @@ The following glyphs do not have the recommended number of contours:
 
 | nameID | current | expected |
 | :--- | :--- | :--- |
-| Family Name | Kreadon Extra Bold | Kreadon Extra |
-| Subfamily Name | Regular | Bold |
+| Family Name | Kreadon Medium | Kreadon Extra |
+| Subfamily Name | Bold | Bold |
 | Full Name | Kreadon Extra Bold | Kreadon Extra Bold |
-| Poscript Name | Kreadon-EB | KreadonExtra-Bold |
+| Poscript Name | Kreadon-ExtraBold | KreadonExtra-Bold |
 | Typographic Family Name | Kreadon | N/A |
 | Typographic Subfamily Name | Extra Bold | N/A | [code: bad-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1100 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** OS/2.sTypoLineGap is "200" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** hhea.lineGap is "200" it should be 0 [code: bad-hhea.lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kreadon-Medium.ttf', 'fonts/ttf/Kreadon-Bold.ttf', 'fonts/ttf/Kreadon-Demi.ttf', 'fonts/ttf/Kreadon-Light.ttf', 'fonts/ttf/Kreadon-ExtraLight.ttf', 'fonts/ttf/Kreadon-ExtraBold.ttf', 'fonts/ttf/Kreadon-Regular.ttf']. [code: missing-os2-fsselection-bit7]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1213, but got 880 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 458, but got 220 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
 
 
@@ -2695,7 +2563,20 @@ The following glyphs do not have the recommended number of contours:
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ j̦́ [code: soft-dotted]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking head.macStyle value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/mac_style">com.google.fonts/check/mac_style</a>)</summary><div>
+
+
+* 🔥 **FAIL** head macStyle BOLD bit should be unset. [code: bad-BOLD]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2 fsSelection REGULAR bit should be set. [code: bad-REGULAR]
+* 🔥 **FAIL** OS/2 fsSelection BOLD bit should be unset. [code: bad-BOLD]
+</div></details><details><summary>🔥 <b>FAIL:</b> Does full font name begin with the font family name? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/match_familyname_fullfont">com.google.fonts/check/name/match_familyname_fullfont</a>)</summary><div>
+
+
+* 🔥 **FAIL** On the 'name' table, the full font name 'Kreadon Extra Bold' does not begin with the font family name 'Kreadon Medium' in platformID 3, encodingID 1, languageID 1033(0409), and nameID 1. [code: mismatch-font-names]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check glyphs do not have duplicate components which have the same x,y coordinates. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_non_transformed_duplicate_components">com.google.fonts/check/glyf_non_transformed_duplicate_components</a>)</summary><div>
 
 
@@ -2949,213 +2830,15 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
 	 uni20DD (U+20DD) [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have segments which seem very short:
-
-	* nine (U+0039) contains a short segment B<<330.0,282.0>-<325.0,281.0>-<319.0,281.0>>
-
-	* at (U+0040) contains a short segment L<<621.0,502.0>--<621.0,512.0>>
-
-	* P (U+0050) contains a short segment B<<336.0,247.0>-<327.0,247.0>-<316.0,248.0>>
-
-	* a (U+0061) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* a (U+0061) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* b (U+0062) contains a short segment L<<214.0,6.0>--<214.0,0.0>>
-
-	* d (U+0064) contains a short segment L<<396.0,0.0>--<396.0,6.0>>
-
-	* g (U+0067) contains a short segment L<<396.0,463.0>--<396.0,470.0>>
-
-	* g (U+0067) contains a short segment L<<400.0,8.0>--<401.0,19.0>>
-
-	* p (U+0070) contains a short segment L<<214.0,470.0>--<214.0,464.0>>
-
-	* q (U+0071) contains a short segment L<<410.0,464.0>--<410.0,470.0>>
-
-	* yen (U+00A5) contains a short segment L<<270.0,256.0>--<268.0,260.0>>
-
-	* yen (U+00A5) contains a short segment L<<442.0,260.0>--<440.0,256.0>>
-
-	* ordfeminine (U+00AA) contains a short segment L<<198.0,731.0>--<198.0,735.0>>
-
-	* ordfeminine (U+00AA) contains a short segment L<<200.0,500.0>--<200.0,502.0>>
-
-	* germandbls (U+00DF) contains a short segment B<<337.0,326.0>-<325.0,327.0>-<313.5,327.5>>
-
-	* germandbls (U+00DF) contains a short segment B<<313.5,327.5>-<302.0,328.0>-<292.0,328.0>>
-
-	* germandbls (U+00DF) contains a short segment B<<292.0,465.0>-<302.0,465.0>-<313.5,465.5>>
-
-	* germandbls (U+00DF) contains a short segment B<<313.5,465.5>-<325.0,466.0>-<337.0,467.0>>
-
-	* agrave (U+00E0) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* agrave (U+00E0) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* aacute (U+00E1) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* aacute (U+00E1) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* acircumflex (U+00E2) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* acircumflex (U+00E2) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* atilde (U+00E3) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* atilde (U+00E3) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* adieresis (U+00E4) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* adieresis (U+00E4) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* aring (U+00E5) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* aring (U+00E5) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* eth (U+00F0) contains a short segment B<<282.0,442.0>-<286.0,442.0>-<295.0,441.0>>
-
-	* eth (U+00F0) contains a short segment B<<295.0,441.0>-<304.0,440.0>-<308.0,438.0>>
-
-	* thorn (U+00FE) contains a short segment L<<214.0,464.0>--<213.0,449.0>>
-
-	* amacron (U+0101) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* amacron (U+0101) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* abreve (U+0103) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* abreve (U+0103) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* aogonek (U+0105) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* aogonek (U+0105) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* dcaron (U+010F) contains a short segment L<<396.0,0.0>--<396.0,6.0>>
-
-	* dcroat (U+0111) contains a short segment L<<396.0,0.0>--<396.0,6.0>>
-
-	* dcroat (U+0111) contains a short segment L<<396.0,6.0>--<397.0,21.0>>
-
-	* gbreve (U+011F) contains a short segment L<<396.0,463.0>--<396.0,470.0>>
-
-	* gbreve (U+011F) contains a short segment L<<400.0,8.0>--<401.0,19.0>>
-
-	* gdotaccent (U+0121) contains a short segment L<<396.0,463.0>--<396.0,470.0>>
-
-	* gdotaccent (U+0121) contains a short segment L<<400.0,8.0>--<401.0,19.0>>
-
-	* uni0123 (U+0123) contains a short segment L<<396.0,463.0>--<396.0,470.0>>
-
-	* uni0123 (U+0123) contains a short segment L<<400.0,8.0>--<401.0,19.0>>
-
-	* Hbar (U+0126) contains a short segment L<<62.0,677.0>--<75.0,677.0>>
-
-	* Rho (U+03A1) contains a short segment B<<336.0,247.0>-<327.0,247.0>-<316.0,248.0>>
-
-	* alphatonos (U+03AC) contains a short segment L<<409.0,458.0>--<409.0,470.0>>
-
-	* alpha (U+03B1) contains a short segment L<<409.0,458.0>--<409.0,470.0>>
-
-	* uni0411 (U+0411) contains a short segment B<<307.0,466.5>-<318.0,467.0>-<330.5,467.5>>
-
-	* uni0420 (U+0420) contains a short segment B<<336.0,247.0>-<327.0,247.0>-<316.0,248.0>>
-
-	* uni0430 (U+0430) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni0430 (U+0430) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni0440 (U+0440) contains a short segment L<<214.0,470.0>--<214.0,464.0>>
-
-	* uni1E9E (U+1E9E) contains a short segment B<<397.0,316.0>-<385.0,317.0>-<373.5,317.5>>
-
-	* uni1E9E (U+1E9E) contains a short segment B<<373.5,317.5>-<362.0,318.0>-<352.0,318.0>>
-
-	* uni1E9E (U+1E9E) contains a short segment B<<352.0,455.0>-<362.0,455.0>-<373.5,455.5>>
-
-	* uni1E9E (U+1E9E) contains a short segment B<<373.5,455.5>-<385.0,456.0>-<397.0,457.0>>
-
-	* uni1EA1 (U+1EA1) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EA1 (U+1EA1) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EA3 (U+1EA3) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EA3 (U+1EA3) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EA5 (U+1EA5) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EA5 (U+1EA5) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EA7 (U+1EA7) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EA7 (U+1EA7) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EA9 (U+1EA9) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EA9 (U+1EA9) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EAB (U+1EAB) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EAB (U+1EAB) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EAD (U+1EAD) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EAD (U+1EAD) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EAF (U+1EAF) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EAF (U+1EAF) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EB1 (U+1EB1) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EB1 (U+1EB1) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EB3 (U+1EB3) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EB3 (U+1EB3) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EB5 (U+1EB5) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EB5 (U+1EB5) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni1EB7 (U+1EB7) contains a short segment L<<396.0,462.0>--<396.0,470.0>>
-
-	* uni1EB7 (U+1EB7) contains a short segment L<<400.0,0.0>--<400.0,4.0>>
-
-	* uni2075 (U+2075) contains a short segment B<<132.0,705.0>-<137.0,705.0>-<142.0,705.0>>
-
-	* uni2075 (U+2075) contains a short segment B<<142.0,705.0>-<147.0,705.0>-<152.0,704.0>>
-
-	* uni2085 (U+2085) contains a short segment B<<132.0,138.0>-<137.0,138.0>-<142.0,138.0>>
-
-	* uni2085 (U+2085) contains a short segment B<<142.0,138.0>-<147.0,138.0>-<152.0,137.0>>
-
-	* Euro (U+20AC) contains a short segment B<<76.0,368.0>-<76.0,379.0>-<77.0,390.0>>
-
-	* Euro (U+20AC) contains a short segment B<<258.0,390.0>-<257.0,379.0>-<257.0,368.0>>
-
-	* uni20BD (U+20BD) contains a short segment B<<356.0,247.0>-<347.0,247.0>-<336.0,248.0>>
-
-	* fiveeighths (U+215D) contains a short segment B<<154.0,605.0>-<159.0,605.0>-<164.0,605.0>>
-
-	* fiveeighths (U+215D) contains a short segment B<<164.0,605.0>-<169.0,605.0>-<174.0,604.0>>
-
-	* uni2468 (U+2468) contains a short segment B<<514.0,303.0>-<509.0,303.0>-<505.0,303.0>>
-
-	* fl (U+FB02) contains a short segment B<<614.0,125.0>-<625.0,125.0>-<634.5,126.0>>
-
-	* fl (U+FB02) contains a short segment B<<634.5,126.0>-<644.0,127.0>-<654.0,131.0>> 
-
-	* uniFF19 (U+FF19) contains a short segment B<<540.0,282.0>-<535.0,281.0>-<529.0,281.0>> [code: found-short-segments]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -3180,6 +2863,8 @@ The following glyphs do not have the recommended number of contours:
 	* Etatonos (U+0389): L<<745.0,451.0>--<744.0,733.0>>
 
 	* H (U+0048): L<<525.0,451.0>--<524.0,733.0>>
+
+	* Hcircumflex (U+0124): L<<525.0,451.0>--<524.0,733.0>>
 
 	* M (U+004D): L<<698.0,0.0>--<697.0,230.0>>
 
@@ -3207,19 +2892,23 @@ The following glyphs do not have the recommended number of contours:
 
 	* fl (U+FB02): L<<258.0,470.0>--<257.0,338.0>>
 
-	* ij (U+0133): L<<453.0,0.0>--<452.0,338.0>>
+	* ij (U+0133): L<<393.0,0.0>--<392.0,470.0>>
 
-	* ij (U+0133): L<<604.0,470.0>--<603.0,-51.0>>
+	* ij (U+0133): L<<544.0,470.0>--<543.0,-51.0>>
 
-	* j (U+006A): L<<133.0,0.0>--<132.0,338.0>>
+	* j (U+006A): L<<133.0,0.0>--<132.0,470.0>>
 
 	* j (U+006A): L<<284.0,470.0>--<283.0,-51.0>>
+
+	* jcircumflex (U+0135): L<<133.0,0.0>--<132.0,470.0>>
+
+	* jcircumflex (U+0135): L<<284.0,470.0>--<283.0,-51.0>>
 
 	* trademark (U+2122): L<<272.0,470.0>--<271.0,733.0>>
 
 	* uni0145 (U+0145): L<<71.0,0.0>--<70.0,733.0>>
 
-	* uni0237 (U+0237): L<<133.0,0.0>--<132.0,338.0>>
+	* uni0237 (U+0237): L<<133.0,0.0>--<132.0,470.0>>
 
 	* uni0237 (U+0237): L<<284.0,470.0>--<283.0,-51.0>>
 
@@ -3247,33 +2936,22 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0427 (U+0427): L<<469.0,403.0>--<468.0,733.0>>
 
-	* uni043C (U+043C): L<<518.0,0.0>--<517.0,130.0>> 
+	* uni043C (U+043C): L<<518.0,0.0>--<517.0,130.0>>
 
-	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[21] Kreadon-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+	* uni043C (U+043C): L<<53.0,0.0>--<52.0,470.0>>
 
+	* uni0E3F (U+0E3F): L<<65.0,1.0>--<64.0,733.0>> 
 
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Kreadon | Kreadon |
-| Subfamily Name | Regular | Regular |
-| Full Name | Kreadon Regular | Kreadon Regular |
-| Poscript Name | Kreadon-R | Kreadon-Regular | [code: bad-names]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
+	* uni2116 (U+2116): L<<71.0,0.0>--<70.0,733.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[20] Kreadon-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check font follows the Google Fonts vertical metric schema (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics">com.google.fonts/check/vertical_metrics</a>)</summary><div>
 
 
-* 🔥 **FAIL** The sum of hhea.ascender + abs(hhea.descender) + hhea.lineGap is 1100 when it should be at least 1200 [code: bad-hhea-range]
+* 🔥 **FAIL** OS/2.sTypoLineGap is "200" it should be 0 [code: bad-OS/2.sTypoLineGap]
+* 🔥 **FAIL** hhea.lineGap is "200" it should be 0 [code: bad-hhea.lineGap]
 </div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
 
 
 * 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/ttf/Kreadon-Medium.ttf', 'fonts/ttf/Kreadon-Bold.ttf', 'fonts/ttf/Kreadon-Demi.ttf', 'fonts/ttf/Kreadon-Light.ttf', 'fonts/ttf/Kreadon-ExtraLight.ttf', 'fonts/ttf/Kreadon-ExtraBold.ttf', 'fonts/ttf/Kreadon-Regular.ttf']. [code: missing-os2-fsselection-bit7]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1213, but got 880 instead [code: ascent]
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 458, but got 220 instead. [code: descent]
 </div></details><details><summary>🔥 <b>FAIL:</b> Checking with fontTools.ttx (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/ttx_roundtrip">com.google.fonts/check/ttx_roundtrip</a>)</summary><div>
 
 
@@ -3283,7 +2961,7 @@ The following glyphs do not have the recommended number of contours:
 
 * 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: į̀ į́ į̂ į̃ į̄ į̌ і́ ị̀ ị́ ị̂ ị̃ ị̄
 
-The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĭ̦ i̦̇ i̦̊ i̦̋ i̦̒ i⃝̀ i⃝́ i⃝̂ i⃝̃ i⃝̄ i⃝̆ i⃝̇ i⃝̈ i⃝̉ i⃝̊ i⃝̋ i⃝̌ i⃝̒ j̦̀ j̦́ [code: soft-dotted]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check glyphs do not have duplicate components which have the same x,y coordinates. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/glyf.html#com.google.fonts/check/glyf_non_transformed_duplicate_components">com.google.fonts/check/glyf_non_transformed_duplicate_components</a>)</summary><div>
 
 
@@ -3537,6 +3215,10 @@ The following glyphs do not have the recommended number of contours:
 
 
 * ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
+</div></details><details><summary>⚠ <b>WARN:</b> Checking Vertical Metric Linegaps. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/linegaps">com.google.fonts/check/linegaps</a>)</summary><div>
+
+
+* ⚠ **WARN** hhea lineGap is not equal to 0. [code: hhea]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -3569,7 +3251,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni00B2 (U+00B2) contains a short segment L<<96.0,507.0>--<104.0,507.0>>
 
-	* onehalf (U+00BD) contains a short segment L<<643.0,40.0>--<651.0,40.0>>
+	* onehalf (U+00BD) contains a short segment L<<693.0,40.0>--<701.0,40.0>>
 
 	* germandbls (U+00DF) contains a short segment B<<310.0,351.0>-<299.0,351.0>-<285.0,351.5>>
 
@@ -3605,6 +3287,12 @@ The following glyphs do not have the recommended number of contours:
 
 	* dcroat (U+0111) contains a short segment L<<445.0,0.0>--<445.0,10.0>>
 
+	* Gcircumflex (U+011C) contains a short segment B<<779.0,369.0>-<780.0,364.0>-<780.0,359.0>>
+
+	* Gcircumflex (U+011C) contains a short segment B<<780.0,359.0>-<780.0,354.0>-<780.0,349.0>>
+
+	* gcircumflex (U+011D) contains a short segment L<<445.0,458.0>--<445.0,470.0>>
+
 	* Gbreve (U+011E) contains a short segment B<<779.0,369.0>-<780.0,364.0>-<780.0,359.0>>
 
 	* Gbreve (U+011E) contains a short segment B<<780.0,359.0>-<780.0,354.0>-<780.0,349.0>>
@@ -3637,6 +3325,8 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni018F (U+018F) contains a short segment B<<50.0,359.0>-<50.0,364.0>-<51.0,369.0>>
 
+	* uni01CE (U+01CE) contains a short segment L<<448.0,0.0>--<448.0,8.0>>
+
 	* alphatonos (U+03AC) contains a short segment L<<445.0,458.0>--<445.0,470.0>>
 
 	* alpha (U+03B1) contains a short segment L<<445.0,458.0>--<445.0,470.0>>
@@ -3654,6 +3344,8 @@ The following glyphs do not have the recommended number of contours:
 	* uni0430 (U+0430) contains a short segment L<<448.0,0.0>--<448.0,8.0>>
 
 	* uni0440 (U+0440) contains a short segment L<<125.0,470.0>--<125.0,459.0>>
+
+	* uni0E3F (U+0E3F) contains a short segment B<<323.0,0.0>-<317.0,0.0>-<312.0,0.0>>
 
 	* uni1E9E (U+1E9E) contains a short segment B<<315.0,351.0>-<304.0,351.0>-<293.0,351.5>>
 
@@ -3689,6 +3381,12 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni2082 (U+2082) contains a short segment L<<96.0,-60.0>--<104.0,-60.0>>
 
+	* dong (U+20AB) contains a short segment L<<445.0,0.0>--<445.0,10.0>>
+
+	* uni2154 (U+2154) contains a short segment L<<202.0,402.0>--<210.0,402.0>>
+
+	* uni2156 (U+2156) contains a short segment L<<202.0,406.0>--<210.0,406.0>>
+
 	* fi (U+FB01) contains a short segment B<<237.0,747.0>-<245.0,747.0>-<254.5,745.5>> 
 
 	* fl (U+FB02) contains a short segment B<<455.5,-12.5>-<446.0,-14.0>-<437.0,-14.0>> [code: found-short-segments]
@@ -3708,6 +3406,8 @@ The following glyphs do not have the recommended number of contours:
 	* Etatonos (U+0389): L<<647.0,416.0>--<646.0,733.0>>
 
 	* H (U+0048): L<<529.0,416.0>--<528.0,733.0>>
+
+	* Hcircumflex (U+0124): L<<529.0,416.0>--<528.0,733.0>>
 
 	* M (U+004D): L<<690.0,0.0>--<689.0,542.0>>
 
@@ -3735,19 +3435,23 @@ The following glyphs do not have the recommended number of contours:
 
 	* asterisk (U+002A): L<<250.0,780.0>--<249.0,662.0>>
 
-	* ij (U+0133): L<<317.0,-60.0>--<316.0,407.0>>
+	* ij (U+0133): L<<267.0,-60.0>--<266.0,470.0>>
 
-	* ij (U+0133): L<<379.0,470.0>--<378.0,-96.0>>
+	* ij (U+0133): L<<329.0,470.0>--<328.0,-96.0>>
 
-	* j (U+006A): L<<106.0,-60.0>--<105.0,407.0>>
+	* j (U+006A): L<<106.0,-60.0>--<105.0,470.0>>
 
 	* j (U+006A): L<<168.0,470.0>--<167.0,-96.0>>
+
+	* jcircumflex (U+0135): L<<106.0,-60.0>--<105.0,470.0>>
+
+	* jcircumflex (U+0135): L<<168.0,470.0>--<167.0,-96.0>>
 
 	* trademark (U+2122): L<<258.0,470.0>--<257.0,733.0>>
 
 	* uni0145 (U+0145): L<<71.0,0.0>--<70.0,733.0>>
 
-	* uni0237 (U+0237): L<<106.0,-60.0>--<105.0,407.0>>
+	* uni0237 (U+0237): L<<106.0,-60.0>--<105.0,470.0>>
 
 	* uni0237 (U+0237): L<<168.0,470.0>--<167.0,-96.0>>
 
@@ -3773,16 +3477,20 @@ The following glyphs do not have the recommended number of contours:
 
 	* uni0427 (U+0427): L<<476.0,364.0>--<475.0,733.0>>
 
-	* uni043C (U+043C): L<<471.0,0.0>--<470.0,289.0>> 
+	* uni043C (U+043C): L<<471.0,0.0>--<470.0,289.0>>
 
-	* uni043C (U+043C): L<<54.0,0.0>--<53.0,470.0>> [code: found-semi-vertical]
+	* uni043C (U+043C): L<<54.0,0.0>--<53.0,470.0>>
+
+	* uni0E3F (U+0E3F): L<<65.0,0.0>--<64.0,733.0>> 
+
+	* uni2116 (U+2116): L<<71.0,0.0>--<70.0,733.0>> [code: found-semi-vertical]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 54 | 100 | 826 | 43 | 597 | 0 |
+| 0 | 49 | 105 | 826 | 43 | 597 | 0 |
 | 0% | 3% | 6% | 51% | 3% | 37% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
