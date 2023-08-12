@@ -46,11 +46,24 @@ Fonts are built automatically by GitHub Actions.
 
 ## Changelog
 
+**10 August 2023, Version 1.31**
+- Fix minor issues.
+
+**10 August 2023, Version 1.30**
+- Rearrange Opentype features, replace default design with the ss04 design. Former glyphs design is now available in the ss04.
+- Add glyphs covering Chinese Pinyin.
+- Add glyphs covering Esperanto. 
+- Add more extended fractions.
+- Add more currency symbols.
+- Add some glyphs such as _Degree Celsius_, _Numeric sign_.
+- Make adjustments to the glyph design such as _K.ss02_.
+- Modify the data to solve errors.
+
 **8 August 2023, Version 1.21**
 - Fix minor issues.
 
 **7 August 2023. Version 1.20**
-- Make adjustment to the glyph design such as _S_, _2_, _Phy_.
+- Make adjustments to the glyph design such as _S_, _2_, _Phy_.
 - Change the default design of _ae_, and delete the code of _ae.ss01_.
 - Modify the data to solve errors.
 
