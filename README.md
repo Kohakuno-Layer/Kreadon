@@ -28,13 +28,17 @@ You can find a detailed description of the typographic effects of each OpenType 
 * `OpenType Feature ss03`: Alternative Uppercase ‘I’ and ‘J’. By enabling this option, alternative character designs with serifs will be activated.
 * `OpenType Feature ss04`: Alternative Lowercase ‘i’ and ‘j’. By enabling this option, alternative character designs with serifs will be activated.
 
+![Sample Image](documentation/37-a1.gif)
+![Sample Image](documentation/37-a2.gif)
+
 Additionally, Kreadon provides some advanced features for your typography:
 
 * `Extended Character Sets`: Kreadon offers an extensive selection of character sets in the Latin, Greek, and Cyrillic alphabets. This broad range of characters allows for the typing of languages like Turkish or Vietnamese, which may not be possible with other fonts.
 * `Cyrillic Localization`: Just like with Latin alphabets, the range of Cyrillic alphabets varies for each language. Kreadon is designed to accommodate a diverse range of characters. In Bulgarian, certain glyphs appear distinct from those used in other languages, hence Kreadon provides language-specific variations.
 * `Numerics Variation`: Kreadon has a variety of numeric glyphs to enhance the flexibility of your typography. For example, Kreadon has old-style numerics, full-width numerics, and circled numerics.
 
-**Glyphs design sample is available [here](https://github.com/Kohakuno-Layer/Kreadon/blob/main/specimen.md).**
+![Sample Image](documentation/37-07.png)
+![Sample Image](documentation/37-08.png)
 
 ## Designer
 
