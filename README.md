@@ -52,6 +52,11 @@ Fonts are built automatically by GitHub Actions.
 
 ## Changelog
 
+**11 August 2023, Version 1.32**
+- Fix letter spacings.
+- Fix variable settings.
+- Fix minor issues.
+
 **10 August 2023, Version 1.31**
 - Fix minor issues.
 
