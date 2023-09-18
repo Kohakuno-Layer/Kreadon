@@ -18,7 +18,7 @@
 
 ## What's Kreadon?
 
-Introducing Kreadon, a font family of geometric sans-serif typefaces. Kreadon offers a simple and graphically appealing typographic style in seven weights, ranging from ExtraLight to ExtraBold, perfect for both headlines and main-body texting. Moreover, it possesses the capability of swappable alternative characters thanks to Opentype features, which contributes to its adaptability. 
+Introducing Kreadon, a font family of geometric sans-serif typefaces. Kreadon offers a simple and graphically appealing typographic style in seven weights, ranging from ExtraLight to ExtraBold, perfect for display-purpose texting such as headlines. Moreover, it possesses the capability of swappable alternative characters thanks to Opentype features, which contributes to its adaptability. 
 
 Kreadon was initially designed for the branding of StudioGnu, the creators’ community based on the Vocaloid culture, but it is available to the public to inspire and explore further creativity inside and outside the community.
 You can find a detailed description of the typographic effects of each OpenType feature below:
